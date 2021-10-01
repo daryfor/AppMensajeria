@@ -11,72 +11,87 @@
 </head>
 
 <body>
-    <div class="sidebar">
-        <div class="sidebar-title">
-            <h2>Channels</h2>
-        </div>
-        <div class="sidebar-menu">
-            <button type="submit" id="new">New Channel</button>
-            <ul>
-                <li><a href="#">#General</a></li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="main-content">
-        <div class="header">
-            <div class="channel-title">
-                <h2>#General</h2>
+    <div class="container">
+        <div class="sidebar">
+            <div class="sidebar-title">
+                <h2>Channels</h2>
             </div>
-
-            <div class="search-bar">
-                <input type="search" placeholder="Search">
-            </div>
-
-            <div class="user">
-                <div class="username">
-                    <h3>Dario Diez</h3>
+            <div class="sidebar-menu">
+                <div class="new">
+                    <button type="submit" id="new">New Channel</button>
                 </div>
-                <div class="user-status">
-                    <i class="fas fa-check-circle"></i>
-                </div>
-                <div class="user-img">
-                    <img src="img/avatar.jpg" alt="avatar" class="avatar">
-                </div>
-            </div>
-
-        </div>
-        <div class="chat-page">
-            <div class="inbox">
-                <div class="chats-received-img">
-                    <img src="img/palpatine.jpg">
-                </div>
-                <div class="chats-received">
-                    <div class="chat-user">
-                        <h5>Emperador Palpatine</h5>
-                        <span class="time">12/09 - 15:40</span>
-                    </div>
-                    <div class="msg-received">
-                        <p>Bienvenido al canal GeeksHub Academy</p>
-                    </div>
+                <div class="channel-list">
+                    <ul>
+                        <li><a href="#">#General</a></li>
+                    </ul>
                 </div>
 
-                <div class="chats-sent">
-                    <div class="chat-current-user">
-                        <span class="time">12/09 - 15:42</span>
-                        <h5>Maestro Yoda</h5>
-                    </div>
-                    <div class="msg-sent">
-                        <p>Muchas gracias, es un placer estar aquí con vosotros</p>
-                    </div>
-                </div>
-                <div class="chats-sent-img">
-                    <img src="img/avatar.jpg">
-                </div>
             </div>
         </div>
-    </div>
-    <!--
+        <div class="main">
+            <div class="header">
+                <div class="channel-title">
+                    <h2>#General</h2>
+                </div>
+                <div class="search-bar">
+                    <input type="search" placeholder="Search">
+                </div>
+                <div class="user">
+                    <div class="username">
+                        <h3>Dario Diez</h3>
+                    </div>
+                    <div class="user-status">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div class="user-img">
+                        <img src="img/avatar.jpg" alt="avatar" class="avatar">
+                    </div>
+                </div>
+            </div>
+            <div class="chat">
+                <div class="contact">
+                    <div class="contact-img">
+                        <img src="img/palpatine.jpg">
+                    </div>
+                    <div class="msg">
+                        <div class="contact-info">
+                            <div class="username">
+                                <h5>Emperador Palpatine</h5>
+                            </div>
+                            <div class="time">
+                                <span>12/09 - 15:40</span>
+                            </div>
+                        </div>
+                        <div class="contact-msg">
+                            <p>Bienvenido al canal GeeksHub Academy</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="receiver-user">
+                    <div class="chats-sent">
+                        <div class="chat-current-user">
+                            <span class="time">12/09 - 15:42</span>
+                            <h5>Maestro Yoda</h5>
+                        </div>
+                        <div class="msg-sent">
+                            <p>Muchas gracias, es un placer estar aquí con vosotros</p>
+                        </div>
+                    </div>
+                    <div class="chats-sent-img">
+                        <img src="img/avatar.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="new-message">
+                <div class="new-msg">
+                    <input type="text" class="message" placeholder="Type a new message">
+                </div>
+                <div class="send">
+                    <a href="#"><i class="fas fa-paper-plane"></i></a>
+                </div>
+            </div>
+        </div>
+        <!--
     <div class="main-content">
         <div class="header">
             <div class="channel-title">
@@ -101,8 +116,8 @@
                 <textarea id="newtext" cols="90" rows="1"></textarea>
             </div>
         </main>
+    </div>-->
     </div>
--->
     <script src="js/script.js"></script>
 </body>
 

@@ -1,16 +1,23 @@
 * {
-    padding: 0px;
-    margin: 0px;
-    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+div.container {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
     list-style-type: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/* ------ BARRA DE CHANNELS  ------*/
 div.sidebar {
-    width: 220px;
     position: fixed;
-    height: 100%;
+    width: 220px;
+    height: 100vh;
     left: 0px;
     top: 0px;
     background: rgb(112, 105, 156);
@@ -18,48 +25,77 @@ div.sidebar {
 }
 
 div.sidebar-title {
-    height: 90px;
-    padding-top: 1rem;
-    padding-left: 2rem;
-    margin-bottom: -15px;
+    height: 70px;
+    margin: 0;
+    padding: 0;
     color: whitesmoke;
 }
 
-div.sidebar-menu button {
-    margin-left: 30px;
+div.sidebar-title h2 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+div.sidebar-menu {
+    height: 95%;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+div.new {
+    text-align: center;
+}
+
+div.new button {
     margin-bottom: 20px;
     padding: .6rem 2rem;
     border-radius: 30px;
 }
 
-div.sidebar-menu li {
+div.channel-list {
     width: 100%;
-    margin-bottom: 1.3rem;
-    padding-left: 2rem;
+    height: 100vh;
+    text-align: left;
 }
 
-div.sidebar-menu li a {
+div.channel-list ul {
+    padding-left: 10px;
+    list-style-type: none;
+}
+
+div.channel-list li {
+    width: 100%;
+    margin-bottom: 1.3rem;
+
+}
+
+div.channel-list li a {
     display: block;
     color: whitesmoke;
     font-size: 1rem;
+    padding: 5px;
 }
 
-div.sidebar-menu li a:hover {
+div.channel-list li a:hover {
     background: white;
     color: rgb(112, 105, 156);
-    padding: 5px 0px;
+    padding: 5px;
     border-radius: 10px 0px 0px 10px;
 }
 
-div.main-content {
-    /*margin-left: 220px;*/
-    max-width: 500;
-    margin: auto;
-    margin-top: 4%;
+
+/* ------ PARTE PRINCIPAL DE LA VENTANA  ------*/
+div.main {
+    display: block;
+    margin-left: 220px;
+    width: calc(100%-220px);
+    height: 100vh;
     font-family: sans-serif;
     letter-spacing: 0.5px;
 }
 
+/* ------ BARRA SUPERIOR  ------*/
 div.header {
     display: flex;
     justify-content: space-between;
@@ -73,15 +109,23 @@ div.header {
 }
 
 div.channel-title {
-    padding-top: 10px;
-    padding-left: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+div.channel-title h2 {
+    margin: 15px;
 }
 
 div.search-bar {
+    margin: 0;
+    padding: 0;
     border: 1px solid rgb(104, 103, 103);
+    box-shadow: 0px 0px 2px 1px rgb(104, 103, 103);
     border-radius: 30px;
     margin-top: 10px;
-    width: 300px;
+    /*width: 300px;*/
+    width: 40%;
     height: 30px;
     display: flex;
     align-items: center;
@@ -89,35 +133,51 @@ div.search-bar {
 }
 
 div.search-bar input {
-    height: 100%;
-    padding: .5rem;
+    width: 100%;
+    padding: 10px;
     border: none;
-    outline: none;
 }
 
 div.user {
+    margin: 0;
+    padding: 0;
     display: flex;
-    margin-right: 10px;
 }
 
 div.username {
+    margin: 0;
+    padding: 0;
     font-size: 14px;
-    padding-top: 10px;
+}
+
+div.username h3 {
+    margin-top: 10px;
+    margin-right: -5px;
 }
 
 div.user-status {
-    margin-right: -5px;
-    margin-top: 28px;
+    margin: 0;
+    padding: 0;
+    /*margin-right: -5px;
+    margin-top: 28px;*/
 }
 
 div.user-status .fas {
+    margin-top: 30px;
+    margin-right: -5px;
     color: green;
+}
+
+div.user-img {
+    margin: 0;
+    padding: 0;
 }
 
 div.user-img img {
     position: relative;
     width: 50px;
     height: 50px;
+    margin-right: 5px;
     z-index: -1;
 }
 
@@ -136,27 +196,170 @@ img.avatar {
     margin-right: 10px;
 }*/
 
-div.chat-page {
-    margin-left: 250px;
-    margin-top: 80px;
-    padding: 0 0 50px 0;
+
+/* ------ CHAT ------*/
+div.chat {
+    margin-top: 60px;
+    width: 100%;
+    height: 88vh;
+    /*margin-left: 250px;
+    margin-top: 40px;*/
+    display: inline-block;
+    /*padding: 0 0 50px 0;*/
+}
+
+div.contact {
+    display: flex;
+    float: left;
+    width: 80%;
+    margin: 10px 0px;
+}
+
+div.contact-img {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+
+div.contact-img img {
+    width: 40px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+div.msg {
+    display: block;
+    background: rgb(245, 235, 235);
+    border-radius: 10px;
+    padding: 10px 100px 10px 10px;
+}
+
+div.contact-info {
+    display: flex;
+    width: 125%;
+}
+
+div.username h5 {
+    font-size: 14px;
+    color: rgb(73, 73, 73);
+    margin-right: 55%;
+}
+
+div.time span {
+    font-size: 12px;
+    color: rgb(114, 114, 114);
+    margin-left: -20%;
+}
+
+div.contact-msg {
+    padding: 5px 0px 0px 10px;
+}
+
+div.receiver-user {
+    display: flex;
+    float: right;
+    width: 50%;
+    margin: 10px 5px;
+}
+
+div.chats-sent {
+    display: block;
+    background: rgb(225, 220, 255);
+    border-radius: 10px;
+    padding: 10px 10px 10px 100px;
+}
+
+div.chat-current-user {
+    display: flex;
+    width: 100%;
+}
+
+div.chat-current-user span {
+    font-size: 12px;
+    color: rgb(114, 114, 114);
+    margin-left: -30%;
+}
+
+div.chat-current-user h5 {
+    font-size: 14px;
+    color: rgb(73, 73, 73);
+    margin-left: 50%;
+}
+
+div.msg-sent {
+    float: left;
+    padding: 5px 0px 0px 0px;
+    margin-left: -25%;
+}
+
+div.chats-sent-img {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+
+div.chats-sent-img img {
+    width: 40px;
+    border-radius: 50%;
+    margin: 10px 15px 5px 10px;
+}
+
+div.new-message {
+    width: 100%;
+    display: flex;
+    height: 90px;
+    background: rgb(187, 181, 181);
+}
+
+div.new-msg {
+    width: 80%;
+    justify-content: left;
+}
+
+div.new-msg input {
+    margin-top: 20px;
+    margin-left: 15px;
+    border: 1px solid rgb(112, 105, 156);
+    border-radius: 20px;
+    box-shadow: 5px 5px rgb(112, 105, 156);
+    padding: 2% 70% 2% 2%;
+}
+
+div.send {
+    width: 20%;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+div.send a {
+    margin-left: 25px;
+}
+
+div.send .fas {
+    color: rgb(112, 105, 156);
+    font-size: 2em;
+}
+
+/*
+div.sender-user {
+    font-size: 14px;
+    width: 100%;
+    margin: 10px 0px 20px 0px;
 }
 
 div.chats-received {
     background: rgb(245, 235, 235) none repeat scroll 0 0;
     border-radius: 10px;
     color: #413e3e;
-    font-size: 14px;
-    padding: 10px 10px 10px 0px;
-    width: 60%;
+    padding: 10px;
     margin-left: 50px;
+    margin-right: 20%;
 }
 
 div.chats-received p {
     background: rgb(245, 235, 235) none repeat scroll 0 0;
     border-radius: 10px;
     color: #413e3e;
-    font-size: 14px;
     padding: 10px 0px 10px 12px;
     width: 100%;
 }
@@ -170,11 +373,12 @@ div.chats-received-img img {
 
 div.chat-user {
     display: flex;
+    width: 100%;
 }
 
 div.chat-user h5 {
     padding-left: 15px;
-    font-size: 14px;
+    font-size: inherit;
 }
 
 div.chat-user .time {
@@ -191,9 +395,10 @@ div.msg-received {
     width: 92%;
 }
 
-div.chats-sent {
-    overflow: hidden;
-    margin: 26px 20px;
+div.receiver-user {
+    font-size: 14px;
+    width: 100%;
+    margin: 10px 0px 20px 0px;
 }
 
 div.chats-sent {
@@ -234,7 +439,7 @@ div.chat-current-user .time {
     margin-left: 30px;
     text-align: right;
 }
-
+*/
 /*
 div.msg-received p {
     background: rgb(224, 222, 222) none repeat scroll 0 0;
