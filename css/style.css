@@ -336,14 +336,6 @@ div.new-message {
     justify-content: center;
 }
 
-/*
-div.new-msg {
-    width: 100%;
-    margin-left: 20px;
-    display: flex;
-    justify-content: center;
-}*/
-
 div.msg-text {
     margin: 10px;
     width: 800px;
@@ -378,130 +370,50 @@ div.send-button i:hover {
     color: rgb(124, 124, 124);
 }
 
-/*
-div.send {
-    width: 5%;
-    height: 80px;
-}
 
-div.send .fas {
-    color: rgb(112, 105, 156);
-    font-size: 2.4em;
-    margin: 20px;
-}
-
-div.send .fas:hover {
-    color: rgb(124, 124, 124);
-}
-*/
-
-/*
-div.sender-user {
-    font-size: 14px;
+div.popup {
+    background: rgb(0, 0, 0, 0.6);
     width: 100%;
-    margin: 10px 0px 20px 0px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
 }
 
-div.chats-received {
-    background: rgb(245, 235, 235) none repeat scroll 0 0;
-    border-radius: 10px;
-    color: #413e3e;
-    padding: 10px;
-    margin-left: 50px;
-    margin-right: 20%;
-}
-
-div.chats-received p {
-    background: rgb(245, 235, 235) none repeat scroll 0 0;
-    border-radius: 10px;
-    color: #413e3e;
-    padding: 10px 0px 10px 12px;
-    width: 100%;
-}
-
-div.chats-received-img img {
-    width: 40px;
-    float: left;
-    border-radius: 50%;
-    margin-top: 10px;
-}
-
-div.chat-user {
-    display: flex;
-    width: 100%;
-}
-
-div.chat-user h5 {
-    padding-left: 15px;
-    font-size: inherit;
-}
-
-div.chat-user .time {
-    color: #777;
-    font-size: 12px;
+div.popup-content {
+    width: 300px;
+    height: 150px;
     margin-left: 200px;
-    text-align: right;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+    display: grid;
 }
 
-div.msg-received {
-    display: inline-block;
-    padding: 0 0 0 10px;
-    vertical-align: top;
-    width: 92%;
+div.popup-content .far {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    cursor: pointer;
 }
 
-div.receiver-user {
-    font-size: 14px;
-    width: 100%;
+div.popup-content h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(112, 105, 156);
+}
+
+div.popup-content p {
+    margin-top: 15px;
+}
+
+input#newChannel {
     margin: 10px 0px 20px 0px;
 }
 
-div.chats-sent {
-    background: rgb(178, 167, 248) none repeat scroll 0 0;
-    border-radius: 10px;
-    font-size: 14px;
-    padding: 10px 10px 10px 0px;
-    width: 60%;
-    margin-left: 260px;
+input#create {
+    width: 40%;
+    margin-left: 30%;
 }
-
-div.msg-sent p {
-    background: rgb(178, 167, 248);
-    border-radius: 10px;
-    font-size: 14px;
-    padding: 10px 20px 10px 12px;
-    width: 100%;
-    text-align: right;
-}
-
-div.chats-sent-img img {
-    width: 40px;
-    float: right;
-    margin-top: -90px;
-    margin-right: 30px;
-    border-radius: 50%;
-}
-
-div.chat-current-user h5 {
-    float: right;
-    margin-right: 10px;
-    font-size: 14px;
-}
-
-div.chat-current-user .time {
-    color: #777;
-    font-size: 12px;
-    margin-left: 30px;
-    text-align: right;
-}
-*/
-/*
-div.msg-received p {
-    background: rgb(224, 222, 222) none repeat scroll 0 0;
-    border-radius: 10px;
-    color: #646464;
-    font-size: 14px;
-    margin: 0;
-    padding: 5px 10px 5px 12px;
-    width: 100%;
-}*/

@@ -18,11 +18,13 @@
             </div>
             <div class="sidebar-menu">
                 <div class="new">
-                    <button type="submit" id="new">New Channel</button>
+                    <button type="submit" id="new" onclick="fct_callpopup()">New Channel</button>
                 </div>
                 <div class="channel-list">
                     <ul>
-                        <li><a href="#">#General</a></li>
+                        <li>
+                            <a href="#">#General</a>
+                        </li>
                     </ul>
                 </div>
 
@@ -38,7 +40,7 @@
                         <input type="search" placeholder="Search">
                     </div>
                     <div class="search-button">
-                        <a href="#"><i class="fas fa-search"></i></a>
+                        <a href="#" onclick="fct_search()"><i class="fas fa-search"></i></a>
                     </div>
                 </div>
                 <div class="user">
@@ -186,8 +188,17 @@
                     <input type="text" class="message" placeholder="Type a new message">
                 </div>
                 <div class="send-button">
-                    <a href="#"><i class="fas fa-paper-plane"></i></a>
+                    <a href="#" onclick="fct_newMessage()"><i class="fas fa-paper-plane"></i></a>
                 </div>
+            </div>
+        </div>
+        <div class="popup">
+            <div class="popup-content">
+                <a href="#" onclick="fct_closeWindow()"><i class="far fa-times-circle"></i></a>
+                <h3>New Channel</h3>
+                <p>Name</p>
+                <input type="text" name="" id="newChannel">
+                <input type="submit" value="Create" id="create" onclick="fct_createChannel()">
             </div>
         </div>
     </div>
