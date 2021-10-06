@@ -7,8 +7,24 @@ function fct_closeWindow() {
 }
 
 function fct_createChannel() {
-    alert("New channel");
+    //alert("New channel");
+    var newName = document.getElementById("newChannel").value;
+    var listNode = document.getElementById("list");
+    var liNode = document.createElement("li");
+    var aNode = document.createElement("a");
+    var txtNode = document.createTextNode("#" + newName);
+    var attr = document.createAttribute("href");
 
+    attr.value = "#";
+
+    aNode.setAttributeNode(attr);
+
+    aNode.appendChild(txtNode);
+    liNode.appendChild(aNode);
+    listNode.appendChild(liNode);
+
+    fct_closeWindow();
+    document.getElementById("newChannel").value = "";
 
 }
 
